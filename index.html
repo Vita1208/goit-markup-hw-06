@@ -30,12 +30,64 @@
             </nav>
             <address class="address">
                 <ul class="address-list">
-                <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="adress-item"><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="adress-item"><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+            <svg width="24" height="24" class="header-open-icon">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+        </button>
         </div>
-    </header>
+      <!--  <div class="mob-menu">
+            <button type="button" class="close-menu-btn">
+                <svg width="8" height="8" class="header-open-icon">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+                <nav>
+                <ul class="menu-mob-list">
+                    <li class="mob-menu-item"><a class="menu-mob-link" href="./index.html">Studio</a></li>
+                    <li class="mob-menu-item"><a class="menu-mob-link" href="">Portfolio</a></li>
+                    <li class="mob-menu-item"><a class="menu-mob-link" href="">Contacts</a></li>
+                </ul>
+               <address class="mob-address">
+                <ul class="mob-address-list">
+                    <li class="mob-adress-item"><a class="mob-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="mob-adress-item"><a class="mob-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <ul class="menu-mob-soc-link">
+                <li class="menu-mob-soc-item">
+                    <a href="" class="menu-mob-soc-list">
+                        <svg class="menu-mob-soc-svg" width="40" height="40">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-mob-soc-item">
+                    <a href="" class="menu-mob-soc-list">
+                        <svg class="menu-mob-soc-svg" width="40" height="40">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg></a>
+                </li>
+                <li class="menu-mob-soc-item">
+                    <a href="" class="menu-mob-soc-list">
+                        <svg class="menu-mob-soc-svg" width="40" height="40">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg></a>
+                </li>
+                <li class="menu-mob-soc-item">
+                    <a href="" class="menu-mob-soc-list">
+                        <svg class="menu-mob-soc-svg" width="40" height="40">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg></a>
+                </li>
+            </ul>
+            </nav> --->
+        </div>
+    </header> 
                                             <!--section1-->
         <main>
         <section class="hero">
@@ -43,9 +95,9 @@
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-button" type="button">Order Service</button>
             </div>
-        </section>
+        </section> 
                                          <!--section2-->
-        <section class="light">
+           <section class="light">
             <div class="container">
             <h2 class="visually-hidden">Our advantages</h2>
             <ul class="advantages-list">
@@ -81,14 +133,21 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section> 
                                                       <!--section3-->
         <section class="title">
             <div class="container">
             <h2 class="team-title">Our Team</h2>
             <ul class="title-list">
                 <li class="list-team">
-                    <img src="./images/mark-guerrero.jpg" width="264" height="260" alt="Mark Guerrero" />
+                    <img 
+                    srcset="./images/mark-guerrero.jpg 1x, 
+                    ./images/mark-guerrero-2x.jpg 2x"
+                    src="./images/mark-guerrero.jpg" 
+                    width="264"
+                     height="260" 
+                     alt="Mark Guerrero" 
+                     class="list-team-img" />
                     <div class="name-proffecion"><h3 class="section-team-name">Mark Guerrero</h3>
                     <p class="section-team-proffecion">Product Designer</p>
                     <ul class="list-socialmedia">
@@ -118,7 +177,13 @@
                 </ul>
                 </div>
                 <li class="list-team">
-                    <img src="./images/tom-ford.jpg" width="264" height="260" alt="Tom Ford" />
+                    <img 
+                     srcset="./images/tom-ford.jpg 1x, 
+                    ./images/tom-ford-2x.jpg  2x"
+                    src="./images/tom-ford.jpg" 
+                    width="264" height="260" 
+                    alt="Tom Ford" 
+                    class="list-team-img"  />
                     <div class="name-proffecion"><h3 class="section-team-name">Tom Ford</h3>
                     <p class="section-team-proffecion">Frontend Developer</p>
                         <ul class="list-socialmedia">
@@ -151,7 +216,14 @@
                     </div>
                 </li>
                 <li class="list-team">
-                    <img src="./images/camila-garcia.jpg" width="264" height="260" alt="Camila Garcia" />
+                    <img 
+                    srcset="./images/camila-garcia.jpg 1x,
+                    ./images/camila-garcia-2x.jpg 2x"
+                    src="./images/camila-garcia.jpg" 
+                    width="264" 
+                    height="260" 
+                    alt="Camila Garcia" 
+                    class="list-team-img"  />
                    <div class="name-proffecion"><h3 class="section-team-name">Camila Garcia</h3>
                     <p class="section-team-proffecion">Marketing</p>
                         <ul class="list-socialmedia">
@@ -184,7 +256,14 @@
                     </div>
                 </li>
                 <li class="list-team">
-                    <img src="./images/daniel-wilson.jpg" width="264" height="260" alt="Daniel Wilson" />
+                    <img 
+                     srcset="./images/daniel-wilson.jpg 1x,
+                    ./images/daniel-wilson-2x.jpg 2x"
+                    src="./images/daniel-wilson.jpg"
+                     width="264"
+                    height="260"
+                    alt="Daniel Wilson" 
+                    class="list-team-img" />
                     <div class="name-proffecion"><h3 class="section-team-name">Daniel Wilson</h3>
                     <p class="section-team-proffecion">UI Designer</p>
                         <ul class="list-socialmedia">
@@ -220,7 +299,7 @@
             </div>
         </section>
                                           <!--section4-->
-        <section class="portfolio">
+          <section class="portfolio">
             <div class="container">
             <h2 class="section-portfolio">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -280,12 +359,12 @@
         </li>
      </ul>
      </div>
-        </section>
+        </section> 
     </main>
 
 
-    <!-- footer -->
-    <footer class="footer">
+   <!-- footer -->
+         <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo-text">
                 <a class="footer-logo" href="./index.html">Web<span class="footer-logo-studio">Studio</span></a>
@@ -336,17 +415,17 @@
             </form>
             </div>
             </div>
-            </footer>
+            </footer> 
 
 
 
      
                                         <!--backdrop-->
-    <div class="backdrop is-open">
+ <!-- <div class="backdrop is-open">
      <div class="modal">
         <button class="modal-close-btn" type="button">
             <svg class="modal-close-icon" width="8" height="8">
-               <use href="./images/icons.svg#icon-close-black"></use>
+               <use href="./img/icons.svg#icon-close-black"></use>
             </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -358,7 +437,7 @@
             <div class="form-input-wrap">
             <input class="form-input" type="text" name="user-name" id="user-name"/>
             <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person-black"></use>
+                <use href="./img/icons.svg#icon-person-black"></use>
             </svg>
             </div>
             </div>
@@ -369,7 +448,7 @@
             <div class="form-input-wrap">
             <input class="form-input" type="text" name="Phone" id="Phone" />
             <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-phone-black"></use>
+            <use href="./img/icons.svg#icon-phone-black"></use>
             </svg>
             </div>
             </div>
@@ -380,7 +459,7 @@
             <div class="form-input-wrap">
             <input class="form-input" type="text" name="Email" id="Email" />
             <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-email-black"></use>
+            <use href="./img/icons.svg#icon-email-black"></use>
             </svg>
             </div>
             </div>
@@ -400,7 +479,7 @@
             <label for="user-privacy" class="checkbox-text">
                 <span class="checkbox-span">
                 <svg class="checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector"></use>
+                <use href="./img/icons.svg#icon-vector"></use>
                 </svg>
                 </span>I accept the terms and conditions of the<a class="checkbox-text-pos" href="">Privacy Policy</a>
             </label>
@@ -408,7 +487,7 @@
             <button type="button" class="label-button">Send</button>
         </form>
     </div>
-    </div>
+    </div> -->
   </body>
   </html>
 
