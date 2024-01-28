@@ -617,7 +617,7 @@ color: #F4F4FD;
       
 }
 .footer-media{
-  margin: 0 auto;
+   margin: 0 auto;
 }
   .footer-socialmedia{
       display: flex;
@@ -1021,17 +1021,20 @@ width: calc((100% - 24px) / 2);
     width: calc((100% - 24px) / 2);
 }
 .footer-logo-text {
+    text-align: left;
+}
+.footer-logo-text {
     padding-left: 108px;
     text-align: left;
 }
+
 .footer-media{
     text-align: left;
-    margin-left: 24px;   
+    margin-left: 24px;
 }
 .footer-email{
     align-self: left;
     justify-content: left;
-    
 }
 .form-input{
     justify-content: left;
