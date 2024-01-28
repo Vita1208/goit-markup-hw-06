@@ -114,18 +114,12 @@ padding: 17px 0;
   bottom: -1px;
 }
 
-.address-list{
-/*---   display: flex; --*/
-    display: none;
-  /*--  gap: 40px; --*/
-  
-}
-.address{
+.address {
     font-style: normal;
     margin-left: auto;
-    padding: 24px 0;
- 
+    display: none;       
 }
+
 
 .address-link:hover,
 .address-link:focus{
@@ -179,7 +173,7 @@ padding: 17px 0;
     height: 56px;
     border: none;
     margin-top: 72px;
-   }
+ }
  
 .hero-button{
 color: #ffffff;
@@ -204,11 +198,45 @@ color: #ffffff;
     width: 100%;
     height: 100vh;
     padding: 16px;
+    
 }
 .close-menu-btn{
-    display: block;
-    margin-left: auto;
     margin-bottom: 24px;
+}
+.close-menu-btn {
+    width: 24px;
+    top: 24px;
+    height: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: #2E2F42;
+    cursor: pointer;
+    padding: 0;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+    background-color: #404BBF;
+    border: none;
+}
+
+.header-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu-btn:hover>.header-close-icon,
+.close-menu-btn:focus>.header-close-icon {
+    fill: #FFFFFF;
 }
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -220,9 +248,13 @@ color: #ffffff;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        text-transform: capitalize;      
+        text-transform: capitalize;   
+}
+.mob-address-link-span{
+    color: #4D5AE5;
 }
 .menu-mob-list{
+    margin-top: 24px;
     margin-bottom: 168px;
 }
 .mob-address-link{
@@ -232,13 +264,37 @@ color: #ffffff;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+.mob-menu-span{
+    color: #404BBF;
+
+}
 .mob-adress-item:not(:last-child) {
    margin-bottom: 24px;
 }
 .mob-address-list{
     margin-bottom: 48px;
 }
-.menu-mob-soc-list{
+.menu-mob-soc-link {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;  
+}
+
+.menu-mob-soc-item {
+    width: 40px;
+    height: 40px;
+     
+}
+
+.menu-mob-soc-list:hover,
+.menu-mob-soc-list:focus {
+    background-color: #404bbf;
+    fill: #404bbf;
+}
+
+.menu-mob-soc-list {
     background-color: #4D5AE5;
     border-radius: 50%;
     display: flex;
@@ -249,21 +305,10 @@ color: #ffffff;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-mob-soc-link {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-}
 
-.menu-mob-soc-item {
-    width: 40px;
-    height: 40px;
-    margin-top: 8px;
-}
 .menu-mob-soc-svg {
-     fill: #f4f4fd;
- }
+    fill: #f4f4fd;
+}
 
 
 
@@ -517,7 +562,7 @@ color: #ffffff;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
+       /*----footer----*/
 .footer{
         background-color: #2e2f42;
         padding: 100px 0;
@@ -544,7 +589,7 @@ text-align: center;
 }
 .footer-media{
       text-align: center;
-      margin: 0 auto;
+      margin-right: auto;
 }
 .footer-logo-studio{
 color: #F4F4FD;
@@ -568,7 +613,11 @@ color: #F4F4FD;
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+     
       
+}
+.footer-media{
+  margin: 0 auto;
 }
   .footer-socialmedia{
       display: flex;
@@ -615,7 +664,7 @@ color: #F4F4FD;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        margin-bottom: 16px; 
+        margin-bottom: 16px;
         margin-top: 72px;
            
            
@@ -639,11 +688,12 @@ color: #F4F4FD;
     font-weight: 400;
     line-height: 2;
     letter-spacing: 0.04em;
-     padding-left: 16px;
-     box-shadow: 0px 4px 4px
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px
     rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     opacity: 0.3;
+   
     
 }
 .form-input-footer::placeholder{
@@ -670,7 +720,7 @@ color: #F4F4FD;
 .email-icon{
     margin-left: 16px;
 }
-
+      /*------backdrop---*/
 .backdrop{
     position: fixed;
     background-color: rgba(46, 47, 66, 0.40);
@@ -681,8 +731,8 @@ color: #F4F4FD;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -738,7 +788,6 @@ border: none;
     visibility: visible;
     pointer-events: auto;
 }
-
 .modal-text{
     font-weight: 500;
     font-size: 16px;
@@ -756,8 +805,7 @@ border: none;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 4px;
-  
+    margin-bottom: 4px; 
 }
 .form-input-wrap {
     position: relative;
@@ -783,13 +831,15 @@ border: none;
 .modal-icon {
     position: absolute;
     left: 16px;
-    top: 8px;
+    top: 16px;
     transform: translateY(-50%);
     top: 50%;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 
 }
+
+
+
 .form-modal-comment{
     margin-bottom: 16px;
 }
@@ -821,11 +871,19 @@ border: none;
     margin-bottom: 24px;
    
 }
+
+.text-policy{
+width: 231px;
+height: 31px;
+flex-shrink: 0;
+}
 .checkbox-text {
     color: #8E8F99;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
  
      
 }
@@ -842,14 +900,14 @@ border: none;
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-   
-   
+  
 }
 .checkbox-input:checked + .checkbox-text span {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
 }
+
 .checkbox-text a {
     color: #4D5AE5;
     font-size: 12px;
@@ -857,6 +915,7 @@ border: none;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
+    
 }
 .label-button{
     min-width: 169px;
@@ -871,15 +930,16 @@ border: none;
     background-color: #4D5AE5;
     border: none;
     display: block;
+    border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 24px 96px;
+    margin: 0 auto;
     
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-    }
+}
 .hero-container {
         width: 100%;
         background-image: linear-gradient(
@@ -907,13 +967,20 @@ border: none;
     display: none;
 }
 
-
+.address{
+  display: block;
+  flex-direction: column;
+  padding-top: 16px;
+}
 .address-link {
     color: #434455;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adress-item:not(:last-child) {
+    margin-bottom: 12px;
 }
 .logo{
     margin-right: 120px;
@@ -966,6 +1033,17 @@ width: calc((100% - 24px) / 2);
     justify-content: left;
     
 }
+.form-input{
+    justify-content: left;
+}
+.modal{
+    width: 408px;
+    min-height: 584px;
+}
+.text-policy{
+    width: 338px;
+    height: 16px;
+}
 
 }
 
@@ -996,6 +1074,9 @@ width: calc((100% - 24px) / 2);
 }
 .logo {
     margin-right: 76px;
+}
+.address{
+    padding-top: 24px;
 }
 .address-list {
     display: flex; 
@@ -1029,6 +1110,7 @@ width: calc((100% - 24px) / 2);
     margin-bottom: 8px;
 }
 .advantages-item-text {
+    width: 264px;
     font-weight: 400;
 }
 
@@ -1036,12 +1118,20 @@ width: calc((100% - 24px) / 2);
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
+.team-title{
+    margin-bottom: 72px;
+}
 .title-list {
-    gap: 24px;
+    align-items: baseline;
+    justify-content: baseline;
+    gap: 24px;  
 }
 .list-team {
     width: calc((100% - 24px * 3) / 4);
+   
+}
+.title {
+   padding: 0;
 }
 .portfolio {
   padding-top: 120px;
@@ -1054,8 +1144,22 @@ width: calc((100% - 24px) / 2);
 .portfolio-item {
     width: calc((100% - 24px * 3) / 3);
 }
+.footer-container{
+    display: flex;
+}
+.footer-email{
+    margin: 0;
+    display: block;
+    align-self: auto;
+}
+.footer-logo-text{
+    padding-left: 0;
 }
 
+.footer-media{
+    margin-left: 120px;
+}
+}
 
 
 
